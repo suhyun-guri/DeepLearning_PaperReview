@@ -66,6 +66,7 @@ layer마다 time complexity를 보존할 수 있는 형태로 네트워크를 �
 
 결과적으로 본 모델은 VGG Net보다 더 적은 파라미터를 사용하고 복잡도 또한 낮았다고 한다. 
 <img src=https://images.velog.io/images/suhyun-guri/post/e0f78b31-cb8f-4516-a452-9170c1215282/Screenshot_20220309-164123_Samsung%20Notes.jpg width=400>
+
 <span style="color:grey"> _점선은 input단과 output단의 dimension이 일치하지 않아서 맞춰주기 위한 테크닉이 가미된 부분이다._</span>
 
 VGG와 비교했을 때 FLOPs가 더 감소했다.
@@ -112,7 +113,9 @@ Plain network의 경우 layer가 깊을수록 성능이 떨어지고 ResNet의 �
 결론적으로 Plain network와 비교했을 때 ResNet의 경우 더 깊은 layer가 얕은 layer에 비해서 잘 동작하고 있고 training rate도 낮고 일반화 성능 또한 높다고 한다.
 
 수렴 속도 또한 더 빠르다는 것을 확인할 수 있다. ResNet 초기 단계에서 더 빠르게 수렴할 수 있도록 만들어줌으로써 optimization 자체를 더욱 쉽게 만들어주는 것이 장점이다.
+
 <img src=https://images.velog.io/images/suhyun-guri/post/2c5278b3-c364-4e56-a1b6-9844df7caf1a/Untitled%20(12).png width=600>
+
 <span style="color:grey"> _오른쪽이 Bottleneck_</span>
 
 또한 본 논문에서 추가적으로 shortcut connection을 위해서 identity mapping과 projection mapping 사용시 결과를 실험을 통해 알려주고 있다.
