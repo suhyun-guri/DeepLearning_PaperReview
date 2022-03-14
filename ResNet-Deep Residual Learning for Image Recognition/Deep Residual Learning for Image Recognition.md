@@ -42,7 +42,7 @@ F(x)는 weight layer 두 개를 거친 이후의 값을 의미
 > **Deep Residual Learning Framework** <br>
 `convolution은 feature을 추출한다.` 라는 컨셉에서 $identity$ $x$는 이전 층에서 학습된 정보이고 $F(x)$는 아직 학습하지 못한 `Residual` 정보이다.<br>
 즉, 이미 학습 시킨 $x$를 보존한 상태로 추가적으로 필요한 정보 : $F(x) (=H(x)-x)$만 훈련시켜 학습 난이도를 낮춘다.<br>
-- $F(x)$만을 훈련 시킨다고 해서 추가적인 기법이 필요한 것이 아니라 $H(x) = F(x) + x$라고 하게 되면 $F(x)$만 훈련 시키게 된다.
+$F(x)$만을 훈련 시킨다고 해서 추가적인 기법이 필요한 것이 아니라 $H(x) = F(x) + x$라고 하게 되면 $F(x)$만 훈련 시키게 된다.
 
 
 극단적으로 identity mapping이 최적의 해라고 했을 때, 함수 F가 0이 될 수 있게 하는 것이 학습 난이도가 더 쉽다. 다시말해 H가 x인 경우 즉 우리가 본질적으로 학습시키고자 하는 mapping이 identity mapping일 때, residual 자체가 0이 되도록 학습시키는 것이 더 쉽다.
